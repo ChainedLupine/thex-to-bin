@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbInput = new System.Windows.Forms.RichTextBox();
             this.labelFilename = new System.Windows.Forms.Label();
             this.btnConvert = new System.Windows.Forms.Button();
             this.btnSetFile = new System.Windows.Forms.Button();
             this.btnVerify = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // rtbInput
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.rtbInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(13, 13);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(744, 488);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.rtbInput.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInput.Location = new System.Drawing.Point(13, 13);
+            this.rtbInput.Name = "rtbInput";
+            this.rtbInput.Size = new System.Drawing.Size(744, 488);
+            this.rtbInput.TabIndex = 0;
+            this.rtbInput.Text = "";
             // 
             // labelFilename
             // 
@@ -101,7 +102,7 @@
             this.Controls.Add(this.btnSetFile);
             this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.labelFilename);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbInput);
             this.Name = "FormMain";
             this.Text = "Thex-to-Bin";
             this.ResumeLayout(false);
@@ -110,7 +111,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbInput;
         private System.Windows.Forms.Label labelFilename;
         private System.Windows.Forms.Button btnConvert;
         private System.Windows.Forms.Button btnSetFile;

@@ -124,6 +124,27 @@ namespace thex_to_bin
             return bytes.ToArray();
         }
 
+        static public string convertToRawHex (byte[] data, int columns = 16)
+        {
+            StringBuilder sb = new StringBuilder() ;
+
+            int rCount = 0;
+            for (int i = 0; i < data.Length; i++)
+            {
+                sb.Append(string.Format("{0}", data[i].ToString ("X2")));
+
+                if (rCount++ > columns - 1)
+                {
+                    rCount = 0;
+                    sb.Append("\r\n");
+                }
+                else
+                    sb.Append(" ");
+            }
+
+            return sb.ToString();
+        }
+
 
     }
 

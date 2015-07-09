@@ -30,9 +30,10 @@
         {
             this.rtbInput = new System.Windows.Forms.RichTextBox();
             this.labelFilename = new System.Windows.Forms.Label();
-            this.btnConvert = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnSetFile = new System.Windows.Forms.Button();
             this.btnVerify = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbInput
@@ -60,16 +61,16 @@
             this.labelFilename.Text = "No binfile set";
             this.labelFilename.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnConvert
+            // btnSave
             // 
-            this.btnConvert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConvert.Location = new System.Drawing.Point(681, 538);
-            this.btnConvert.Name = "btnConvert";
-            this.btnConvert.Size = new System.Drawing.Size(75, 23);
-            this.btnConvert.TabIndex = 2;
-            this.btnConvert.Text = "Convert";
-            this.btnConvert.UseVisualStyleBackColor = true;
-            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Location = new System.Drawing.Point(681, 538);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save Binfile";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnSetFile
             // 
@@ -93,14 +94,26 @@
             this.btnVerify.UseVisualStyleBackColor = true;
             this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
+            // btnLoad
+            // 
+            this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoad.Location = new System.Drawing.Point(438, 538);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 23);
+            this.btnLoad.TabIndex = 5;
+            this.btnLoad.Text = "Load Binfile";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 573);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnVerify);
             this.Controls.Add(this.btnSetFile);
-            this.Controls.Add(this.btnConvert);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.labelFilename);
             this.Controls.Add(this.rtbInput);
             this.Name = "FormMain";
@@ -113,9 +126,10 @@
 
         private System.Windows.Forms.RichTextBox rtbInput;
         private System.Windows.Forms.Label labelFilename;
-        private System.Windows.Forms.Button btnConvert;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnSetFile;
         private System.Windows.Forms.Button btnVerify;
+        private System.Windows.Forms.Button btnLoad;
     }
 }
 

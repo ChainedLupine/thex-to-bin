@@ -77,7 +77,7 @@ EA 05 7C 00 00 etc.
 
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.OverwritePrompt = true ;
-            if (binFilePath.Length > 0)
+            if (binFilePath != null && binFilePath.Length > 0)
                 sfd.FileName = binFilePath;
 
             sfd.Filter = "Raw Binary|*.bin|Raw Binary (All)|*.*|DOS COM file|*.COM";
